@@ -13,7 +13,7 @@ app.include_router(route_auth.router)
 # 2024.02.17 デプロイ先をAWSに変更する作業を行っている。
 # フロント部分をFire base　→　S3に変更
 # CORSエラーが発生、オリジンにS3アドレスを追加
-origins = ['http://localhost:3000', 'https://udemy-lesson-farm-stack-app.web.app','http://farm-react-todo.s3-website-ap-northeast-1.amazonaws.com/']
+origins = ['http://localhost:3000', 'https://udemy-lesson-farm-stack-app.web.app','http://farm-react-todo.s3-website-ap-northeast-1.amazonaws.com']
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
